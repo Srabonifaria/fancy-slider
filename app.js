@@ -133,19 +133,8 @@ document.getElementById('search').addEventListener('keypress', function(event){
     document.getElementById('search-btn').click();
   }
 })
-// spinner added.....
+// spinner added-1.....
 const toggleSpinner =() => {
   const spinner =document.getElementById('loading-spinner')
   spinner.classList.toggle('d-none');
 }
-$(document).ready(function(){
-  $('.next').click(function(){
-    $('.pagination').find('page-item.active').next().addClass('active');
-    $('.pagination').find('page-item.active').prev().removeClass('active');
-  })
-    $('.prev').click(function(){
-      $('.pagination').find('page-item.active').prev().addClass('active');
-      $('.pagination').find('page-item.active').next().removeClass('active');
-
-  })
-})
